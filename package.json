@@ -1,0 +1,50 @@
+{
+  "name": "speed-analysis-web",
+  "version": "1.0.0",
+  "description": "speed analysis web",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "http://git.code.oa.com/chriscai/speed-analysis-web.git"
+  },
+  "scripts": {
+    "dev-server": "webpack-dev-server --config webpack-dev-server.config.js --content-base app/ --progress --colors --port 8080 --inline"
+  },
+  "dependencies": {
+    "async": "^1.2.0",
+    "babel-core": "^5.8.9",
+    "babel-loader": "^5.3.2",
+    "body-parser": "^1.9.3",
+    "bootstrap": "^3.3.5",
+    "css-loader": "^0.14.0",
+    "extract-text-webpack-plugin": "^0.8.0",
+    "file-loader": "^0.8.1",
+    "flux": "^2.0.0",
+    "html-loader": "^0.3.0",
+    "items-store": "^0.7.0",
+    "json5": "^0.4.0",
+    "keymirror": "~0.1.0",
+    "null-loader": "^0.1.0",
+    "object-assign": "^1.0.0",
+    "react": "^0.13.1",
+    "react-bootstrap": "^0.24.2",
+    "react-hot-loader": "^1.0.0",
+    "react-proxy-loader": "^0.3.1",
+    "react-router": "^0.13.2",
+    "stats-webpack-plugin": "^0.1.2",
+    "style-loader": "^0.12.0",
+    "superagent": "^1.1.0",
+    "url-loader": "^0.5.5",
+    "uuid": "^2.0.1",
+    "webpack": "^1.8.5",
+    "webpack-dev-server": "^1.4.7"
+  },
+  "devDependencies": {
+    "uglify-js": "~2.4.15"
+  },
+  "keywords": [
+    "speed"
+  ],
+  "author": "chriscai",
+  "license": "MIT"
+}

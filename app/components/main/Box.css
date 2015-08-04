@@ -1,0 +1,14 @@
+.main-box {
+    box-shadow: 0 2px 0 rgba(0,0,0,.05);
+    background: #fff;
+    margin-bottom:20px;
+}
+
+.main-box h3{
+    font-size: 18px;
+    font-weight: 500;
+    padding-right: 10px;
+    border-left-width: 4px;
+    border-left-style: solid;
+    padding:13px 20px;
+}

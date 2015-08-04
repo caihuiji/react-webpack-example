@@ -1,0 +1,33 @@
+.header-nav {
+    margin: 0 auto;
+    width: 1200px;
+    text-align: left;
+    height: 63px;
+    position: relative;
+}
+
+.header-nav-list {
+    width: 800px;
+}
+
+.header-nav-list li{
+    float: left;
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.header-nav-list a {
+    height: 62px;
+    line-height: 62px;
+    display: inline-block;
+    font-weight: normal;
+    position: relative;
+    padding: 0 20px;
+    margin: 0 0px;
+    z-index: 20;
+}
+
+.header-nav-list a:link, .header-nav-list a:visited {
+    color: #333333;
+    text-decoration: none;
+}
