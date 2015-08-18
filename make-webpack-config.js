@@ -46,6 +46,7 @@ module.exports = function(options) {
         path : 'app',
         context : path.join(__dirname, "app"),
 		filename: '[name].js',
+		sourceMapFilename: "debugging/[file].map",
 		pathinfo: true
 	};
 	var excludeFromStats = [
