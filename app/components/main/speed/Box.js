@@ -16,9 +16,6 @@ var Box = React.createClass({
         };
     },
 
-
-
-
     /**
      * @return {object}
      */

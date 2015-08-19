@@ -4,8 +4,19 @@
 
 
 var React = require('react');
-var LeftNav = require('./LeftNav');
+var Index = require('../main/index/Index');
+var LeftNav = require('../main/speed/speed');
 var Content = require('./Content');
+
+var Router = require('react-router');
+var Route = Router.Route;
+
+var routes = (
+    <Route handler={Index}>
+        <Route path="about" handler={About}/>
+        <Route path="inbox" handler={Inbox}/>
+    </Route>
+);
 
 var Main = React.createClass({
 

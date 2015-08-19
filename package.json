@@ -1,11 +1,11 @@
 {
-  "name": "speed-analysis-web",
+  "name": "react-webpack-example",
   "version": "1.0.0",
-  "description": "speed analysis web",
+  "description": "react-webpack-example",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "http://git.code.oa.com/chriscai/speed-analysis-web.git"
+    "url": "http://git.code.oa.com/chriscai/react-webpack-example.git"
   },
   "scripts": {
     "dev-server": "webpack-dev-server --config webpack-dev-server.config.js --content-base app/ --progress --colors --port 8080 --inline"
@@ -22,6 +22,7 @@
     "flux": "^2.0.0",
     "html-loader": "^0.3.0",
     "items-store": "^0.7.0",
+    "jquery": "~2.1.4",
     "json5": "^0.4.0",
     "keymirror": "~0.1.0",
     "null-loader": "^0.1.0",
@@ -30,7 +31,7 @@
     "react-bootstrap": "^0.24.2",
     "react-hot-loader": "^1.0.0",
     "react-proxy-loader": "^0.3.1",
-    "react-router": "^0.13.2",
+    "react-router": "^0.13.3",
     "stats-webpack-plugin": "^0.1.2",
     "style-loader": "^0.12.0",
     "superagent": "^1.1.0",

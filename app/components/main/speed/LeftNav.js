@@ -2,7 +2,7 @@
  * Created by chriscai on 2015/7/29.
  */
 var React = require('react');
-var TreeView = require('../LeftNav/TreeView');
+var TreeView = require('../../common/TreeView');
 
 var LeftNav = React.createClass({
 
@@ -13,7 +13,8 @@ var LeftNav = React.createClass({
         return (
             <div className="layout-left-nav">
                 <TreeView/>
-            </div>);
+            </div>
+        );
     }
 
 

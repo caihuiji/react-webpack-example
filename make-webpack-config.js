@@ -6,13 +6,13 @@ var loadersByExtension = require("./config/loadersByExtension");
 
 module.exports = function(options) {
 	var entry = {
-	    "bundle":"app.js"
+		"bundle":"app.js"
 	};
 	var loaders = {
 		"js":  {
-            loader: "babel-loader?stage=0",
-            include: path.join(__dirname, "app")  //https://github.com/webpack/webpack-dev-server/issues/174
-        },
+			loader: "babel-loader?stage=0",
+			include: path.join(__dirname, "app")  //https://github.com/webpack/webpack-dev-server/issues/174
+		},
 		"json": "json-loader",
 		"txt": "raw-loader",
 		"png|jpg|jpeg|gif|svg": "url-loader?limit=10000",
@@ -43,8 +43,8 @@ module.exports = function(options) {
 	var extensions = ["", ".web.js", ".js", ".jsx"];
 	var root = path.join(__dirname, "app");
 	var output = {
-        path : 'app',
-        context : path.join(__dirname, "app"),
+		path : 'app',
+		context : path.join(__dirname, "app"),
 		filename: '[name].js',
 		sourceMapFilename: "debugging/[file].map",
 		pathinfo: true
@@ -63,10 +63,10 @@ module.exports = function(options) {
 			_: 'underscore'
 		})
 	];
-    plugins.push(new StatsPlugin(path.join(__dirname, "build", "stats.json"), {
-        chunkModules: true,
-        exclude: excludeFromStats
-    }));
+	plugins.push(new StatsPlugin(path.join(__dirname, "build", "stats.json"), {
+		chunkModules: true,
+		exclude: excludeFromStats
+	}));
 	if(options.commonsChunk) {
 		plugins.push(new webpack.optimize.CommonsChunkPlugin("commons", "commons.js" + (options.longTermCaching && !options.prerender ? "?[chunkhash]" : "")));
 	}
